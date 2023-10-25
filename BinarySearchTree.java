@@ -4,6 +4,10 @@ public abstract class BinarySearchTree {
     parent Node<E>;
     left Node<E>;
     right Node<E>;
+
+    public Node<E>(E data) {
+      this.data = data;
+    }
   }
   
   public int data;
