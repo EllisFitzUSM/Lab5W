@@ -1,8 +1,18 @@
-
+/**
+ * A testing class to test adding items to a binary search tree
+ * and sequencing the array of the binary search tree
+ * @author Madalyn Amero
+ *
+ */
 public class TreeIteratorTesting {
 	
 	public int[] testArray;
 
+	/**
+	 * Constructor method to create a binary search tree and utilize a tree iterator
+	 * @param bst the binary search tree to be used
+	 * @param treeItr the tree iterator to be used
+	 */
 	public TreeIteratorTesting(BinarySearchTree bst, TreeIterator treeItr) {
 		bst.add(10);
 		bst.add(5);
@@ -16,6 +26,10 @@ public class TreeIteratorTesting {
 		checkOrder();
 	}
 	
+	/**
+	 * Checks if the returned order of the array is correct or not
+	 * @return true if the order of the array is true and false if the order of the array is incorrect
+	 */
 	public boolean checkOrder() {
 		int[] check = {0, 5, 7, 10, 11, 12, 15};
 		for (int i = 0; i < testArray.length; i++) {
