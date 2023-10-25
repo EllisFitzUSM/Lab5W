@@ -26,7 +26,7 @@ public class TreeIteratorTesting {
 		bst.add(-5);
 		bst.add(-100);
 		
-		testArray = treeIter.SequenceArray(bst)
+		testArray = treeIter.SequenceArray(bst);
 		checkOrder();
 	}
 	
